@@ -29,19 +29,22 @@ pip install numpy matplotlib scipy scikit-image meshio
 
 To visualize a 3D image, use the scroll_view function from Image-Viewer.py. You can load a 3D image (in numpy array format) and interactively scroll through the image slices.
 Example usage:
+
+```bash
 from Image-Viewer import scroll_view
 import numpy as np
-
 # Load your 3D image as a numpy array
+
 image = np.random.rand(100, 100, 50)
 
 # Visualize the image slice by slice
 scroll_view(image)
-
+```
 ### Generating Meshes
 
 To generate a mesh from experimental data, use the get_cell_surface function in Mesh-Test.py. This function takes a 3D image and applies the marching cubes algorithm to create a 3D mesh.
 
+```bash
 from Mesh_Test import get_cell_surface
 
 # Path to the folder containing your .tif images
@@ -50,7 +53,7 @@ output_mesh = "output_mesh.stl"
 
 # Generate the mesh
 get_cell_surface(input_path, output_mesh)
-
+```
 
 
 ### Testing Mesh Generation
