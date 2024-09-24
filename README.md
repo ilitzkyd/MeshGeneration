@@ -24,7 +24,7 @@ You can install the necessary dependencies using:
 
 ```bash
 pip install numpy matplotlib scipy scikit-image meshio
-
+```
 ### Running the code
 
 To visualize a 3D image, use the scroll_view function from Image-Viewer.py. You can load a 3D image (in numpy array format) and interactively scroll through the image slices.
